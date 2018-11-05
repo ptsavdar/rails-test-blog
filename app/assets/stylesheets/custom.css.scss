@@ -1,0 +1,38 @@
+@import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #444;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+  &:hover {
+    color: #777;
+    text-decoration: none;
+  }
+}
+
+.jumbotron {
+  position: relative;
+  background: none;
+  color: #444;
+
+  &::after {
+    content: "";
+    background-image: asset_url("jump-bg.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  h1 {
+    color: #333;
+    font-weight: bold;
+  }
+}
